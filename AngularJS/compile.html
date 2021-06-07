@@ -6,17 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
-    <script src="customDirective.js"></script>
+    <script src="compile.js"></script>
 </head>
 <body>
-
-    <!-- <script type="text/ng-template" id="my-info-msg.html">
-        <b>{{msg}}</b>
-    </script> -->
-
-   <div ng-controller="emp">
-       <div my-info-msg></div>
-       <my-info-msg></my-info-msg>
-   </div>
+    <div ng-controller="msg">
+        <div message text="{{i}}" ng-repeat="i in [1,2,3,4,5]">
+            {{i}}
+        </div>
+    </div>
 </body>
 </html>
