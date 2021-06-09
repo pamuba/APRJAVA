@@ -14,8 +14,12 @@ app.controller('msg', function($scope, $rootScope){
             console.log('b modified to '+newV)
     })
     $scope.$watch('c', function(newV, oldV){
-        if(newV != oldV)
+        if(newV != oldV){
             console.log('c modified to '+newV)
+            if($scope.c > 50){
+                $scope.a = 1000
+            }
+        }
     })
 
     $rootScope.$watch(function(){

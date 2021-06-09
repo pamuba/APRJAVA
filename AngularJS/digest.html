@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
-    <script src="watcher.js"></script>
+    <script src="digest.js"></script>
 </head>
 <body>
-    <div ng-controller="msg">
+    <div ng-controller="emp">
 
         a = <input ng-model="a" />
         <div>a={{a}}</div>
@@ -17,16 +17,6 @@
         b = <input ng-model="b" />
         <div>b={{b}}</div>
         <hr>
-        c = <input ng-model="c" />
-        <div>c={{c}}</div>
-        <hr>
-
-
-      <!-- <div ng-repeat="o in emps">
-          <div>{{o.empno}} - {{o.ename}}</div>
-      </div>
-      <button ng-click="addEmp()">add</button>
-      <button ng-click="modify3rdEmp()">modify 3rd Emp</button> -->
     </div>
 </body>
 </html>
