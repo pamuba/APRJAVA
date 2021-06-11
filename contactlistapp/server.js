@@ -17,8 +17,13 @@ app.get('/contactlist', function(req, res){
 })
 
 app.post('/contactlist', function(req, res){
-    console.log(req.body)
+    console.log(req)
+    db.contactlist.insert(req.body, function(err, doc){
+        res.json(doc)
+    })
 })
+
+app.delete('/contactlist')
 
 app.listen(9000, function(){
     console.log("Servre running @9000")
