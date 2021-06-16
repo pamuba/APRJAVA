@@ -31,6 +31,8 @@ function AppCtrl($scope, $http){
     }
     $scope.update = function(){
         console.log($scope.contact._id);
-        $http.put(('/contactlist/'+$scope.contact._id, $scope.contact))
+        $http.put('/contactlist/'+$scope.contact._id, $scope.contact).success(function(response){
+            refresh();
+        });
     }
 }
