@@ -6,6 +6,12 @@ import Counter from './components/Counter';
 import EventBind from './components/EventBind';
 import Refdemo  from './components/Refdemo';
 import ParentComp from './components/ParentComp'
+import Hero from './components/Hero'
+import  ErrorBoundary from './components/ErrorBoundary'
+import Hooksstate from './components/hooksstate'
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
+import PostList from './components/PostList';
 
 function App() {
   return (
@@ -32,7 +38,21 @@ function App() {
        {/* <EventBind></EventBind> */}
        {/* <Refdemo></Refdemo> */}
 
-       <ParentComp />
+       {/* <ParentComp /> */}
+       {/* <ErrorBoundary>
+        <Hero heroName="Joker"></Hero>
+       </ErrorBoundary>
+
+       <ErrorBoundary>
+       <Hero heroName="Superman"></Hero>
+       </ErrorBoundary> */}
+      {/* <Hooksstate></Hooksstate> */}
+    
+    {/* <UserProvider value="Data from Context">
+      <ComponentC />
+    </UserProvider> */}
+
+    <PostList></PostList>
       </header>
     </div>
   );
